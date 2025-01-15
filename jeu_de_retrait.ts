@@ -26,6 +26,9 @@ class Jeu {
             this.resetGame();
             return;
           }
+        
+        this.currentPlayer = this.currentPlayer === 'Joueur 1' ? 'Joueur 2' : 'Joueur 1';
+        this.updateUI();
 }
 
 }
