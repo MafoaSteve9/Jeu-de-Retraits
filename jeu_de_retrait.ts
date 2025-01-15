@@ -30,5 +30,12 @@ class Jeu {
         this.currentPlayer = this.currentPlayer === 'Joueur 1' ? 'Joueur 2' : 'Joueur 1';
         this.updateUI();
 }
+        resetGame(): void {
+            this.remaining = 10;
+            this.currentPlayer = 'Joueur 1';
+            this.previousMove = 0;
+            this.errorMessage = '';
+            this.updateUI();
+  }
 
 }
