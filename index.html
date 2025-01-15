@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Jeu avec TypeScript</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Jeu : Évitez de perdre</h1>
+ <div class="border-solid">
+    <p id="status">Joueur actuel : Joueur 1 | Reste : 10</p>
+    <p id="error-message" style="color: red;"></p>
+    
+    <div id="controls">
+      <button onclick="playMove(1)">Prendre 1</button>
+      <button onclick="playMove(2)">Prendre 2</button>
+      <button onclick="playMove(3)">Prendre 3</button>
+    </div>
+ </div>
+  </div>
+
+  <script src="jeu_de_retrait.js"></script>
+</body>
+</html>
