@@ -16,6 +16,10 @@ class Jeu {
           this.errorMessage = "Impossible de prendre cette valeur.";
           return;
         }
+
+        this.errorMessage = '';
+        this.remaining -= unites;
+        this.previousMove = unites;
 }
 
 }
