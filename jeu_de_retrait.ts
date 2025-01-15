@@ -10,4 +10,12 @@ class Jeu {
         this.previousMove = 0;
         this.errorMessage = '';
       }
+
+      playMove(unites: number): void {
+        if (unites === this.previousMove) {
+          this.errorMessage = "Impossible de prendre cette valeur.";
+          return;
+        }
+}
+
 }
