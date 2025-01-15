@@ -20,6 +20,12 @@ class Jeu {
         this.errorMessage = '';
         this.remaining -= unites;
         this.previousMove = unites;
+
+        if (this.remaining <= 0) {
+            alert(`${this.currentPlayer} a perdu !`);
+            this.resetGame();
+            return;
+          }
 }
 
 }
