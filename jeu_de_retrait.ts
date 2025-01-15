@@ -37,5 +37,12 @@ class Jeu {
             this.errorMessage = '';
             this.updateUI();
   }
+        private updateUI(): void {
+            const statusElement = document.getElementById('status')!;
+            const errorElement = document.getElementById('error-message')!;
 
+            statusElement.textContent = `Joueur actuel : ${this.currentPlayer} | Reste : ${this.remaining}`;
+            errorElement.textContent = this.errorMessage;
+        }
 }
+
