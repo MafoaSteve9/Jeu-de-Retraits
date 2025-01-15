@@ -1,0 +1,35 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-weight: 600;
+}
+.border-solid {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 13px 3px rgba(0, 0, 0, 0.26);
+    padding: 20px;
+    width: 400px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #controls {
+    display: flex;
+    gap: 12px;
+  }
+  button {
+
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+  }
+  
